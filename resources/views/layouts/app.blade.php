@@ -22,6 +22,7 @@
         </div>
     </main>
     @include('partials.jumbo')
+    @include('partials.footer')
 </body>
 
 </html>

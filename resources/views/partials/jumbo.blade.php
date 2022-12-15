@@ -4,7 +4,7 @@
             {{-- jumbo link --}}
             @foreach ($links_jumbo as $item)
                 <li>
-                    <img src="{{ Vite::asset('resources/img/$item["img"]') }}" alt="">
+                    <img src="{{ Vite::asset("resources/img/{$item['img']}") }}" alt="">
                     <a href="{{ $item['href'] }}">{{ strtoupper($item['title']) }}</a>
                 </li>
             @endforeach

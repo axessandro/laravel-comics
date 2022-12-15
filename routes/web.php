@@ -17,7 +17,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     $links = config('links');
     $links_jumbo = config("links-jumbo");
-    return view('home', compact("links", "links_jumbo"));
+    $links_footer = config("links-footer");
+    return view('home', compact("links", "links_jumbo", "links_footer"));
 })->name("home");
 // /HOME
 
@@ -25,7 +26,8 @@ Route::get('/', function () {
 Route::get('/characters', function () {
     $links = config('links');
     $links_jumbo = config("links-jumbo");
-    return view('characters', compact("links", "links_jumbo"));
+    $links_footer = config("links-footer");
+    return view('characters', compact("links", "links_jumbo", "links_footer"));
 })->name("characters");
 // /CHARACTERS
 
@@ -34,7 +36,8 @@ Route::get('/comics', function () {
     $links = config('links');
     $links_jumbo = config("links-jumbo");
     $comics = config('comics');
-    return view('comics', compact("links", "comics", "links_jumbo"));
+    $links_footer = config("links-footer");
+    return view('comics', compact("links", "comics", "links_jumbo", "links_footer"));
 })->name("comics");
 // /COMICS
 
@@ -42,7 +45,8 @@ Route::get('/comics', function () {
 Route::get('/movies', function () {
     $links = config('links');
     $links_jumbo = config("links-jumbo");
-    return view('movies', compact("links", "links_jumbo"));
+    $links_footer = config("links-footer");
+    return view('movies', compact("links", "links_jumbo", "links_footer"));
 })->name("movies");
 // /MOVIES
 
@@ -50,7 +54,8 @@ Route::get('/movies', function () {
 Route::get('/tv', function () {
     $links = config('links');
     $links_jumbo = config("links-jumbo");
-    return view('tv', compact("links", "links_jumbo"));
+    $links_footer = config("links-footer");
+    return view('tv', compact("links", "links_jumbo", "links_footer"));
 })->name("tv");
 // /TV
 
@@ -58,7 +63,8 @@ Route::get('/tv', function () {
 Route::get('/games', function () {
     $links = config('links');
     $links_jumbo = config("links-jumbo");
-    return view('games', compact("links", "links_jumbo"));
+    $links_footer = config("links-footer");
+    return view('games', compact("links", "links_jumbo", "links_footer"));
 })->name("games");
 // /GAMES
 
@@ -66,7 +72,8 @@ Route::get('/games', function () {
 Route::get('/collectionables', function () {
     $links = config('links');
     $links_jumbo = config("links-jumbo");
-    return view('collectionables', compact("links", "links_jumbo"));
+    $links_footer = config("links-footer");
+    return view('collectionables', compact("links", "links_jumbo", "links_footer"));
 })->name("collectionables");
 // /COLLECTIONABLES
 
@@ -74,7 +81,8 @@ Route::get('/collectionables', function () {
 Route::get('/videos', function () {
     $links = config('links');
     $links_jumbo = config("links-jumbo");
-    return view('videos', compact("links", "links_jumbo"));
+    $links_footer = config("links-footer");
+    return view('videos', compact("links", "links_jumbo", "links_footer"));
 })->name("videos");
 // /VIDEOS
 
@@ -82,7 +90,8 @@ Route::get('/videos', function () {
 Route::get('/fans', function () {
     $links = config('links');
     $links_jumbo = config("links-jumbo");
-    return view('fans', compact("links", "links_jumbo"));
+    $links_footer = config("links-footer");
+    return view('fans', compact("links", "links_jumbo", "links_footer"));
 })->name("fans");
 // /FANS
 
@@ -90,13 +99,16 @@ Route::get('/fans', function () {
 Route::get('/news', function () {
     $links = config('links');
     $links_jumbo = config("links-jumbo");
-    return view('news', compact("links", "links_jumbo"));
+    $links_footer = config("links-footer");
+    return view('news', compact("links", "links_jumbo", "links_footer"));
 })->name("news");
 // /NEWS
 
 // SHOP
 Route::get('/shop', function () {
     $links = config('links');
-    return view('shop', compact("links", "links_jumbo"));
+    $links_jumbo = config("links-jumbo");
+    $links_footer = config("links-footer");
+    return view('shop', compact("links", "links_jumbo", "links_footer"));
 })->name("shop");
 // /SHOP

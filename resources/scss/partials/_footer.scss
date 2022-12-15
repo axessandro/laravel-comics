@@ -1,0 +1,77 @@
+@import 'palette';
+
+footer{
+    background-color: $main-black;
+    .top-footer{
+        background-image: url(../assets/img/footer-bg.jpg);
+        color: white;
+        overflow: hidden;
+        .container{
+            display: flex;
+            justify-content: space-between;
+            padding: 2.5rem 0;
+            .cols{
+                display: flex;
+                justify-content: flex-start;
+                .col{
+                    padding-right: 2rem;
+                    h3{
+                        padding-bottom: .7rem;
+                        padding-left: 2rem;
+                        font-size: 1rem;
+                    }
+                    ul{
+                        padding-bottom: .7rem;
+                        li{
+                            a{
+                                color: white;
+                                opacity: 0.3;
+                                font-size: .9rem;
+                                &:hover{
+                                    opacity: 0.8;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .logo{
+                position: relative;
+                height: 100%;
+                width: 500px;
+                img{
+                    position: absolute;
+                    top: -4rem;
+                }
+            }
+            
+        }
+        
+    }
+
+    .bot-footer{
+        background-color: $footer-bg;
+        padding: 1rem 0;
+        .container{
+            display: flex;
+            justify-content: space-between;
+            button{
+                background-color: $footer-bg;
+                border: 2px solid $primary-color;
+                padding: 1rem 2rem;
+                color: white;
+                font-weight: 700;
+                &:hover{
+                    background-color: $primary-color;
+                    transition: all .5s;
+                }
+            }
+            .follow-us{
+                display: flex;
+                gap: 1rem;
+                align-items: center;
+                color: $primary-color;
+            }
+        }
+    }
+}
