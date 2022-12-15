@@ -22,8 +22,8 @@ return [
         "href" => "/games",
     ],
     [
-        "title" => "collectibles",
-        "href" => "/collectibles",
+        "title" => "collectionables",
+        "href" => "/collectionables",
     ],
     [
         "title" => "videos",

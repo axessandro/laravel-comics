@@ -86,6 +86,7 @@ Route::get('/news', function () {
 
 // SHOP
 Route::get('/shop', function () {
-    return view('shop');
+    $links = config('links');
+    return view('shop', compact("links"));
 })->name("shop");
 // /SHOP

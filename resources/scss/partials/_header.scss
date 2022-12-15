@@ -1,4 +1,14 @@
-@import 'partials/palette';
+@import 'palette';
+
+.top-header{
+    background-color: $primary-color;
+    color: white;
+    font-size: .7rem;
+    span{
+        margin-left: 1rem;
+        padding: 5px 0;
+    }
+}
 
 header{
     width: 100%;
@@ -25,17 +35,19 @@ header{
                 height: 100%;
                 display: flex;
                 align-items: center;
-                border-bottom: 8px solid #ffffff00;
-                border-top: 8px solid #ffffff00;
+                border-bottom: 6px solid #ffffff00;
+                border-top: 6px solid #ffffff00;
                 font-size: .8rem;
-            }
-            
-            li.active{
-                border-bottom: 8px solid $primary-color;
-                a{
+                cursor: pointer;
+                &:hover{
+                    border-bottom: 6px solid $primary-color;
+                }
+
+                &:hover a{
                     color: $primary-color;
                 }
             }
+
         }
     }
 }
