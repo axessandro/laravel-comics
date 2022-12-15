@@ -1,0 +1,41 @@
+@import 'partials/palette';
+
+header{
+    width: 100%;
+    color: $primary-color;
+    font-size: 1rem;
+    font-weight: 500;
+    
+    .container{
+        display: flex;
+        justify-content: space-between;
+        
+        .logo{
+            padding: 0.5rem 0;
+            width: 80px;
+        }
+
+        ul{
+            display: flex;
+            align-items: center;
+            height: 100%;
+
+            li{
+                padding: 0 0.8rem;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                border-bottom: 8px solid #ffffff00;
+                border-top: 8px solid #ffffff00;
+                font-size: .8rem;
+            }
+            
+            li.active{
+                border-bottom: 8px solid $primary-color;
+                a{
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+}
