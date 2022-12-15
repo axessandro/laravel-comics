@@ -1,0 +1,32 @@
+@import 'palette';
+
+.jumbo{
+    background-color: $primary-color;
+    padding: 2rem 0;
+    .container{
+        ul{
+            display: flex;
+            justify-content: space-between;
+
+            li{
+                display: flex;
+                align-items: center;
+
+                &:last-child img{
+                    height: auto;
+                    width: 50px;
+                }
+
+                img{
+                    height: 50px;
+                    margin-right: .7rem;
+                }
+                a{
+                    color: white;
+                    font-size: .8rem;
+
+                }
+            }
+        }
+    }
+}

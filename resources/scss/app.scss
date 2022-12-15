@@ -1,6 +1,8 @@
 @import '~bootstrap/scss/bootstrap';
 @import 'partials/header';
-@import 'partials/palette';
+@import 'partials/hero';
+@import 'partials/comics';
+@import 'partials/jumbo';
 
 // General
 a{
@@ -19,4 +21,10 @@ ul{
 
 img{
     max-width: 100%;
+}
+
+main{
+    background-color: $main-black;
+    color: white;
+    padding: 2rem 0;
 }

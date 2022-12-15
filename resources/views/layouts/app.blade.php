@@ -15,9 +15,13 @@
 
 <body>
     @include('partials.header')
+    @include('partials.hero')
     <main>
-        @yield('content')
+        <div class="container">
+            @yield('content')
+        </div>
     </main>
+    @include('partials.jumbo')
 </body>
 
 </html>
