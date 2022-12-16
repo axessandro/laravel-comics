@@ -6,7 +6,10 @@
 </div>
 <header>
     <div class="container">
-        <div class="logo"><img src="{{ Vite::asset('resources/img/dc-logo.png') }}" alt="DC Comics logo">
+        <div class="logo">
+            <a href="{{ route('home') }}">
+                <img src="{{ Vite::asset('resources/img/dc-logo.png') }}" alt="DC Comics logo">
+            </a>
         </div>
         <nav>
             <ul class="links">
